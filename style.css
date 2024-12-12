@@ -16,6 +16,7 @@
 	--clr-neutral-100: hsl(0, 0%, 95%);
 	--clr-neutral-50: hsl(0, 0%, 100%);
 
+	--clr-success-600: hsl(145, 78%, 24%);
 	--clr-success-400: hsl(145, 63%, 49%);
 	--clr-error-400: hsl(6, 78%, 57%);
 	--clr-error-300: hsl(0, 100%, 54%);
@@ -27,9 +28,12 @@
 	outline: none;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
-	height: 100%;
 	font-size: 1rem;
 }
 
@@ -115,6 +119,40 @@ a:not(:has(i)) {
 }
 
 /* Header */
+#skip-link {
+	clip: rect(1px, 1px, 1px, 1px);
+	word-wrap: normal !important;
+	border: 0;
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	z-index: 101;
+}
+
+#skip-link:focus {
+	background-color: var(--clr-neutral-50);
+	color: var(--clr-success-600);
+	font-weight: 600;
+	font-size: 1.5rem;
+	padding: 0.8em;
+	border: var(--clr-success-600) solid 3px;
+	border-radius: 5px;
+
+	clip: auto;
+	clip-path: inherit;
+	height: auto;
+	top: 0.5rem;
+	left: 0.5rem;
+	margin: auto;
+	overflow: auto;
+	transition: 0s;
+	width: auto;
+}
+
 .top {
 	background-color: var(--clr-neutral-800);
 	padding: 1em 0;
@@ -347,6 +385,7 @@ a:not(:has(i)) {
 }
 
 @media (min-width:768px) {
+
 	.navbar>.container .navbar-brand,
 	.navbar>.container-fluid .navbar-brand {
 		margin-left: 0;
