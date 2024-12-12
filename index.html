@@ -364,15 +364,18 @@
 										<div class="main-login-form">
 											<div class="login-group">
 												<div class="form-group">
-													<label for="ad" class="sr-only">Name</label>
-													<input type="text" class="form-control" id="ad" name="ad" placeholder="Name">
+													<label for="ad">Name:</label>
+													<input type="text" class="form-control" id="ad" name="ad" autocomplete="given-name">
 												</div>
 												<div class="form-group">
-													<label for="tel" class="sr-only">Phone Number</label>
-													<input type="text" class="form-control" id="tel" name="tel" placeholder="Phone Number">
+													<label for="tel">Phone Number:</label>
+													<input type="text" class="form-control" id="tel" name="tel">
 												</div>
 											</div>
-											<button type="submit" class="login-button"><i class="fas fa-chevron-right"></i></button>
+											<button type="submit" class="login-button">
+												<i class="fas fa-chevron-right" aria-hidden="true"></i>
+												<span class="sr-only">Login</span>
+											</button>
 										</div>
 									</form>
 								</div>
@@ -497,22 +500,23 @@
 						<h4 class="modal-title" id="contactModalTitle">Contact Pirate A11y</h4>
 					</div>
 					<div class="modal-body" id="contactModalBody">
+						<p class="form-instructions">All fields marked with an asterisk (*) are required</p>
 						<form>
 							<div class="form-group">
-								<label>First Name *</label>
-								<input id="firstName" class="form-control" type="text">
+								<label for="firstName">First Name <span aria-hidden="true">*</span></label>
+								<input id="firstName" class="form-control" type="text" name="firstName" required>
 							</div>
 							<div class="form-group">
-								<label>Last Name *</label>
-								<input id="lastName" class="form-control" type="text">
+								<label for="lastName">Last Name <span aria-hidden="true">*</span></label>
+								<input id="lastName" class="form-control" type="text" name="lastName" required>
 							</div>
 							<div class="form-group">
-								<label>Phone Number *</label>
-								<input id="phoneNumber" class="form-control" type="tel">
+								<label for="phoneNumber">Phone Number <span aria-hidden="true">*</span></label>
+								<input id="phoneNumber" class="form-control" type="tel" name="phoneNumber" required>
 							</div>
 							<div class="form-group">
-								<label>Message *</label>
-								<textarea id="message" class="form-control"></textarea>
+								<label for="message">Message <span aria-hidden="true">*</span></label>
+								<textarea id="message" class="form-control" name="message" required></textarea>
 							</div>
 							<p class="small">NOTE: This form does not actually do anything.</p>
 						</form>

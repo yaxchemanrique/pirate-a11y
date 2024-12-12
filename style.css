@@ -720,6 +720,10 @@ a:not(:has(i)) {
 	padding: 0.625rem 1.25rem;
 }
 
+.login-group .form-control {
+	background-color: hsl(from var(--clr-neutral-50) h s l / 0.7);
+}
+
 /* 
   --_login-button-size:
   This locally scoped CSS custom property is used to define the size of the`.login-button`. 
@@ -843,4 +847,8 @@ a:not(:has(i)) {
 	.main-footer .row>* {
 		flex-basis: 100%;
 	}
+}
+
+.modal .form-instructions {
+	font-style: italic;
 }
