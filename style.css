@@ -22,10 +22,14 @@
 	--clr-error-300: hsl(0, 100%, 54%);
 
 	--icon-size: 2.9rem;
+
+	--focus-outline: rgb(56, 81, 239) 3px solid;
 }
 
-* {
-	outline: none;
+*:focus,
+*:focus-visible {
+	outline: var(--focus-outline) !important;
+	outline-offset: 4px !important;
 }
 
 html {
@@ -494,6 +498,10 @@ a:not(:has(i)) {
 /* Home */
 .services {
 	padding-block: 3.125rem;
+}
+
+#barbados-map-container:focus-within {
+	outline: var(--focus-outline);
 }
 
 .services p.desc {
