@@ -120,21 +120,21 @@
 							<div class="box">
 								<h3 class="heading-underline-decoration">VISUAL</h3>
 								<p>Blind, low vision, and colorblind users will have difficulties percieving your page. Is it structured correctly, does every visual element have a text equivelent?</p>
-								<i class="fa fa-blind"></i>
+								<i class="fa fa-blind" aria-hidden="true"></i>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="box">
 								<h3 class="heading-underline-decoration">MOTOR SKILLS</h3>
 								<p>Users with motor skills dissabilities are not able to use a mouse to browse your site. Can you do the same and navigate this site without one?</p>
-								<i class="fab fa-accessible-icon"></i>
+								<i class="fab fa-accessible-icon" aria-hidden="true"></i>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="box">
 								<h3 class="heading-underline-decoration">OTHERS</h3>
 								<p>Users with speech and hearing disabilities require captions on all video and audio multimedia. Users with cognative disablities require clean consistent navigation and design.</p>
-								<i class="fa fa-deaf"></i>
+								<i class="fa fa-deaf" aria-hidden="true"></i>
 							</div>
 						</div>
 					</div>
@@ -148,10 +148,10 @@
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="media">
 								<div class="media-left media-middle">
-									<i class="fas fa-skull-crossbones fa-fw"></i>
+									<i class="fas fa-skull-crossbones fa-fw" aria-hidden="true"></i>
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading">Dead Men Tell No Tales</h4>
+									<h3 class="media-heading">Dead Men Tell No Tales</h3>
 									<p>An expression that means dead people will not betray any secrets. Used as a threat to kill someone, or a way of saying there were no survivors.</p>
 								</div>
 							</div>
@@ -159,10 +159,10 @@
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="media">
 								<div class="media-left media-middle">
-									<i class="fa fa-ship fa-fw"></i>
+									<i class="fa fa-ship fa-fw" aria-hidden="true"></i>
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading">Batten Down the Hatches</h4>
+									<h3 class="media-heading">Batten Down the Hatches</h3>
 									<p>From the practice aboard a ship of sealing hatches to prevent water getting below-decks in a storm by using covers secured by strips of material, called battens, firmly attached to the frame of the hatch opening.</p>
 								</div>
 							</div>
@@ -171,10 +171,10 @@
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="media">
 								<div class="media-left media-middle">
-									<i class="fas fa-lock-open fa-fw"></i>
+									<i class="fas fa-lock-open fa-fw" aria-hidden="true"></i>
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading">Davy Jones' Locker</h4>
+									<h3 class="media-heading">Davy Jones' Locker</h3>
 									<p>Graveyard at the bottom of the sea for those killed or drowned. It is used as a euphemism for drowning or shipwrecks in which the sailors' and ships' remains are consigned to the depths of the ocean (to be sent to Davy Jones' Locker).</p>
 								</div>
 							</div>
@@ -182,10 +182,10 @@
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="media">
 								<div class="media-left media-middle">
-									<i class="fas fa-money-bill fa-fw"></i>
+									<i class="fas fa-money-bill fa-fw" aria-hidden="true"></i>
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading">Hornswaggle</h4>
+									<h3 class="media-heading">Hornswaggle</h3>
 									<p>To swindle something, usually money, out of someone else. Though the origins of this word are unknown, its first recorded use appears to be in 1829.</p>
 								</div>
 							</div>
@@ -194,10 +194,10 @@
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="media">
 								<div class="media-left media-middle">
-									<i class="fas fa-umbrella-beach fa-fw"></i>
+									<i class="fas fa-umbrella-beach fa-fw" aria-hidden="true"></i>
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading">Marooned</h4>
+									<h3 class="media-heading">Marooned</h3>
 									<p>To be abandoned with no food, drink or possessions. It is also the title of a 1969 SciFi film staring Gregory Peck. </p>
 								</div>
 							</div>
@@ -205,10 +205,10 @@
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="media">
 								<div class="media-left media-middle">
-									<i class="fas fa-mountain fa-fw"></i>
+									<i class="fas fa-mountain fa-fw" aria-hidden="true"></i>
 								</div>
 								<div class="media-body">
-									<h4 class="media-heading">Landlubber</h4>
+									<h3 class="media-heading">Landlubber</h3>
 									<p>Someone without sailing ability. Not to be confused with Scallywag, which is what an experienced pirate would call a newbie.</p>
 								</div>
 							</div>
@@ -350,8 +350,14 @@
 												</div>
 											</div>
 										</div>
-										<a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-										<a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+										<button class="left carousel-control" href="#myCarousel" data-slide="prev">
+											<i class="fas fa-chevron-left" aria-hidden="true"></i>
+											<span class="sr-only">Previous</span>
+										</button>
+										<button class="right carousel-control" href="#myCarousel" data-slide="next">
+											<i class="fas fa-chevron-right" aria-hidden="true"></i>
+											<span class="sr-only">Previous</span>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -388,8 +394,8 @@
 		<footer class="site-footer">
 			<div class="container main-footer">
 				<div class="row">
-					<div>
-						<h4>Pirate A11y</h4>
+					<section>
+						<h2>Pirate A11y</h2>
 						<p class="text">All images used under the terms of the license agreement from <a href="https://pixabay.com/service/terms/#license">Pixabay</a>. We may be bloodthirsty pirates, but we are not about to break copyright laws.</p>
 						<ul class="social-media-links">
 							<li>
@@ -408,9 +414,9 @@
 								</a>
 							</li>
 						</ul>
-					</div>
-					<div class="related-links">
-						<h4>PIECES O'EIGHT</h4>
+					</section>
+					<section class="related-links">
+						<h2>PIECES O'EIGHT</h2>
 						<ul>
 							<div>
 								<li><a href="framework-out-of-scope/page2.html">Piece One</a></li>
@@ -425,8 +431,9 @@
 								<li><a href="framework-out-of-scope/page2.html">Piece Eight</a></li>
 							</div>
 						</ul>
-					</div>
-					<div>
+					</section>
+					<section>
+						<h2 class="sr-only">Contact information by trainer</h2>
 						<table class="table table-hover table-sm">
 							<thead>
 								<tr>
@@ -453,9 +460,9 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
-					<div class="contact-information">
-						<h4>Level Access</h4>
+					</section>
+					<section class="contact-information">
+						<h2>Level Access</h2>
 						<p class="text">This sample website was created for accessibility training by Level Access.</p>
 						<p>
 							<a href="tel:18008899659" aria-label="Call us at">
@@ -469,7 +476,7 @@
 								<span>info@levelaccess.com</span>
 							</a>
 						</p>
-					</div>
+					</section>
 				</div>
 			</div>
 			<div id="copyright">
@@ -481,11 +488,11 @@
 						<div class="col-md-8">
 							<ul class="list-inline navbar-right">
 								<li>A11Y TOOLS</li>
-								<li><a href="https://www.ssa.gov/accessibility/andi/help/install.html" onclick="window.open(this.href); return false;">ANDI</a></li>
-								<li><a href="https://webaccessibility.com/#Home" onclick="window.open(this.href); return false;">LEVEL ACCESS</a></li>
-								<li><a href="https://whatsock.com/training/matrices/visual-aria.htm" onclick="window.open(this.href); return false;">VISUAL ARIA</a></li>
-								<li><a href="https://www.w3.org/WAI/" onclick="window.open(this.href); return false;">W3C ACCESSIBILITY</a></li>
-								<li><a href="https://validator.w3.org/" onclick="window.open(this.href); return false;">W3C VALIDATOR</a></li>
+								<li><a href="https://www.ssa.gov/accessibility/andi/help/install.html" target="_blank">ANDI</a></li>
+								<li><a href="https://webaccessibility.com/#Home" target="_blank">LEVEL ACCESS</a></li>
+								<li><a href="https://whatsock.com/training/matrices/visual-aria.htm" target="_blank">VISUAL ARIA</a></li>
+								<li><a href="https://www.w3.org/WAI/" target="_blank">W3C ACCESSIBILITY</a></li>
+								<li><a href="https://validator.w3.org/" target="_blank">W3C VALIDATOR</a></li>
 							</ul>
 						</div>
 					</div>
